@@ -1,0 +1,12 @@
+My models will include:
+    Bats  (make, model, imsge, description, details)
+    Gloves (make, model, imsge, description, details)
+    Balls (make, model, image, description)
+    Helmets (make, model, image, description)
+    Review (review_comments, rating_number, recommend)
+    User (username, password)
+
+
+
+
+

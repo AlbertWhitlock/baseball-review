@@ -1,0 +1,1 @@
+My project is a baseball gear review site. You can select the category of gear you want to review, then select a specific item and review it. Your review will then be added to that individual gear's detail page. 

@@ -1,0 +1,3 @@
+As a user I would like to view a specific piece of equipment and be able to tell my opinions about it for future buyers.
+
+As a user I would like to read previously submitted reviews.
