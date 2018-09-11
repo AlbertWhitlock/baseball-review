@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-content">
+        <a class="card-title" href="/bat/{{id}}">
+            make: {{ make }}
+            <br /> model: {{ model }}
+            <br /> image: {{ image }}
+            <br /> description: {{ description }}
+            <br /> details: {{details}}
+        </a>
+    </div>
+    <div class="card-action">
+        {{!--
+        <a href="/user/{{ author.id }}" class="">{{ author.username }}</a> --}} {{!--
+        <span class="tweet__date">{{ createdAt }}</span> --}}
+        <span>{{ comments.length }} Reviews</span>
+        <h3>{{content}}</h3>
+
+        {{!--
+        <form class="" action="/song/{{id}}?_method=DELETE" method="POST">
+            <button type="submit" name="button">Delete</button>
+        </form> --}}
+    </div>
+</div>
