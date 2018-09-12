@@ -1,13 +1,13 @@
-const { Glove, Review } = require("../models/Glove");
+const { Items, Review } = require("../models/Items");
 
 module.exports = {
   index: (req, res) => {
-    Glove.find({}).then(gloves => {
-      res.render("index", { gloves });
+    Items.find({}).then(gloves => {
+      res.render("glove/all", { gloves });
     });
   },
   show: (req, res) => {
-    Glove.findOne({ _id: req.params.id }).exec(function(err, glove) {
+    Items.findOne({ _id: req.params.id }).exec(function(err, glove) {
       Review.populate(glove.reviews, { path: "author" }, function(
         err,
         reviews
@@ -19,7 +19,7 @@ module.exports = {
   },
   update: (req, res) => {
     let { content } = req.body;
-    Glove.findOne({ _id: req.params.id }).then(glove => {
+    Items.findOne({ _id: req.params.id }).then(glove => {
       glove.reviews.push({ content });
       glove.save(err => {
         res.redirect(`/glove/${glove._id}`);
