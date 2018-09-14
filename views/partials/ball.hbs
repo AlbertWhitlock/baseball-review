@@ -1,17 +1,22 @@
-<H1>Ball Details</H1>
+<body style="background-color:lightslategrey">
 
 
-<div class="card">
-    <div class="card-content">
-        <br /> make: {{ make }}
-        <br /> model: {{ model }}
-        <br />
-        <img src="{{ image }}" /> {{!--
-        <br /> image: {{ image }} --}}
-        <br /> description: {{ description }}
+    <H1>Ball Details</H1>
+
+
+    <div class="card">
+        <div class="card-content">
+            <br /> make: {{ make }}
+            <br /> model: {{ model }}
+            <br />
+            <img src="{{ image }}" /> {{!--
+            <br /> image: {{ image }} --}}
+            <br /> description: {{ description }}
+        </div>
+        <div class="card-action">
+            <span>{{ comments.length }} Reviews</span>
+            <h3>{{content}}</h3>
+        </div>
     </div>
-    <div class="card-action">
-        <span>{{ comments.length }} Reviews</span>
-        <h3>{{content}}</h3>
-    </div>
-</div>
+
+</body>
