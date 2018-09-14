@@ -1,1 +1,16 @@
-<H1>In All Gloves</H1>
+<body style="background-color:lightslategrey"></body>
+
+
+<H1>Gloves</H1>
+
+{{#if gloves}}
+<ul>
+    {{#each gloves}} {{ "glove"}}
+    <H4>
+        <a href="/glove/{{id}}">
+            <br /> Glove: {{ make }} {{ model }}
+        </a>
+    </H4>
+    {{/each}}
+</ul>
+{{/if}}

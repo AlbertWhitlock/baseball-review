@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const helmetController = require("../controllers/helmet");
 
-router.get("/", helmetController.index);
+router.get("/all", helmetController.index);
 // router.post("/", helmetController.create);
 // router.get("/new", helmetController.new);
 router.get("/:id", helmetController.show);

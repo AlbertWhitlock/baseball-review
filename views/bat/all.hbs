@@ -1,1 +1,16 @@
-<H1>In All Bats</H1>
+<body style="background-color:lightslategrey">
+
+
+    <H1>Bats</H1>
+
+    {{#if bats}}
+    <ul>
+        {{#each bats}} {{ "bat"}}
+        <H4>
+            <a href="/bat/{{id}}">
+                <br /> Bat: {{ make }} {{ model }}
+            </a>
+        </H4>
+        {{/each}}
+    </ul>
+    {{/if}}

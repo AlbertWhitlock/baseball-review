@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const batController = require("../controllers/bat");
 
-router.get("/", batController.index);
+router.get("/all", batController.index);
 // router.post("/", batController.create);
 // router.get("/new", batController.new);
 router.get("/:id", batController.show);

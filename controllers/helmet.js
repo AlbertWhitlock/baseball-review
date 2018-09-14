@@ -2,7 +2,7 @@ const { Items, Review } = require("../models/Items");
 
 module.exports = {
   index: (req, res) => {
-    Items.find({}).then(helmets => {
+    Items.find({ item: "helmet" }).then(helmets => {
       res.render("helmet/all", { helmets });
     });
   },

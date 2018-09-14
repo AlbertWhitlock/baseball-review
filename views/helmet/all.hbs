@@ -1,1 +1,16 @@
-<H1>In All Helmets</H1>
+<body style="background-color:lightslategrey"></body>
+
+
+<H1>Helmets</H1>
+
+{{#if helmets}}
+<ul>
+    {{#each helmets}} {{ "helmet"}}
+    <H4>
+        <a href="/helmet/{{id}}">
+            <br /> Helmet: {{ make }} {{ model }}
+        </a>
+    </H4>
+    {{/each}}
+</ul>
+{{/if}}

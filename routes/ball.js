@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const ballController = require("../controllers/ball");
 
-router.get("/", ballController.index);
+router.get("/all", ballController.index);
 // router.post("/", ballController.create);
 // router.get("/new", ballController.new);
 router.get("/:id", ballController.show);

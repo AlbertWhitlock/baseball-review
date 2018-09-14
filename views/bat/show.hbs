@@ -17,16 +17,17 @@
 
 <div class="card">
     <div class="card-content">
-        <h4 class="card-title">Add a review:</h6>
-            <form method="POST" action="/bat/{{id}}?_method=PUT" class="row">
-                <p class="input-field inline col s10">
+        <h4 class="card-title">Add a review for the {{make}} {{model}}:</h4>
+        <form method="POST" action="/bat/{{id}}?_method=PUT" class="row">
+            <div class="row">
+                <div class="input-field inline col s12">
                     <label for="content"></label>
-                    <input type="text" name="content" id="">
-
-                </p>
-                <p class="input-field inline col s2">
-                    <input class="btn" type="submit" value="Submit">
-                </p>
-            </form>
+                    <input type="text" name="content" id="" Placeholder="Review:">
+                </div>
+            </div>
+            <p class="input-field inline col s2">
+                <input class="btn" type="submit" value="Submit">
+            </p>
+        </form>
     </div>
 </div>

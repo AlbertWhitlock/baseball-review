@@ -7,14 +7,17 @@ const Review = new Schema({
   recommend: String
 });
 
-const Items = new Schema({
-  make: String,
-  model: String,
-  image: String,
-  description: String,
-  details: String,
-  reviews: [Review]
-});
+const Items = new Schema(
+  {
+    item: String,
+    make: String,
+    model: String,
+    image: String,
+    description: String,
+    reviews: [Review]
+  },
+  { collection: "baseball" }
+);
 
 module.exports = {
   Items: mongoose.model("Items", Items),

@@ -1,1 +1,17 @@
-<h1>In All Balls</h1>
+<body style="background-color:lightslategrey">
+
+
+</body>
+<H1>Balls</H1>
+
+{{#if balls}}
+<ul>
+    {{#each balls}} {{ "ball"}}
+    <H4>
+        <a href="/ball/{{id}}">
+            <br /> Ball: {{ make }} {{ model }}
+        </a>
+    </H4>
+    {{/each}}
+</ul>
+{{/if}}
